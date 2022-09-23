@@ -10,5 +10,5 @@ def EmployeeView(request):
         form = EmployeeForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponse('<h1>Data saved Successfully!!</h1>')
+            return HttpResponse('<h1>Data saved !!</h1>')
     return render(request, template_name, context)
